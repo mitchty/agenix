@@ -185,7 +185,7 @@ function edit {
 
     mkdir -p "$(dirname "$FILE")"
 
-    mv -f "$REENCRYPTED_FILE" "$FILE"
+    cp "$REENCRYPTED_FILE" "$FILE"
 }
 
 function rekey {
